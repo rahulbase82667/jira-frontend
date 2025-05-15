@@ -15,7 +15,7 @@ const ProjectStatus = () => {
     setMessage(''); // Reset message on each attempt
 
     try {
-      const response = await fetch('http://localhost:5000/api/projects/secure', {
+      const response = await fetch('https://jira-backend-hnna.onrender.com/api/projects/secure', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ projectId }),
